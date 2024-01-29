@@ -62,14 +62,14 @@ export default class BrowserTabHandler {
                         SteamClient.Input.ControllerKeyboardSetKeyState(43, false)
                         break
 
-                    case GamepadButton.REAR_LEFT_UPPER:
+                    case GamepadButton.TRIGGER_LEFT:
                         //page back
                         if (browser.m_URLRequested !== browser.m_history.entries[1].url) {
                             browser.m_browserView.GoBack()
                         }
                         break
 
-                    case GamepadButton.REAR_RIGHT_UPPER:
+                    case GamepadButton.TRIGGER_RIGHT:
                         //page forward
                         browser.m_browserView.GoForward()
                         break
